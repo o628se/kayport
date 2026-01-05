@@ -1,0 +1,117 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+
+.navbar {
+    position: sticky;
+    top: 0;
+    background: #29a5ca;
+    padding: 15px 0;
+    z-index: 1000;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.navbar a:hover {
+    background: white;
+    color: rgb(20, 102, 139);
+}
+
+
+
+.section {
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+
+.content {
+    position: relative;
+    z-index: 1;
+    padding: 80px 60px;
+}
+
+.home { background-image: url("kriti.jpg"); }
+#about { background-image: url("pp.jpg"); }
+#skills { background-image: url("pp.jpg"); }
+#projects { background-image: url("blue.jpg"); }
+#experience { background-image: url("blue.jpg");}
+#certifications { background-image: url("pp.jpg");}
+#gallery { background-image: url("pp.png"); }
+#contact { background-image: url("blue.jpg"); }
+
+
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+}
+
+
+
+.gallery-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.gallery-grid img {
+    width: 250px;
+    height: auto;
+}
+
+
+
+input, textarea {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+}
+
+button {
+    background: white;
+    color: black;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: black;
+    color: white;
+}
+
+
+
+footer {
+    background: black;
+    text-align: center;
+    padding: 20px;
+}
